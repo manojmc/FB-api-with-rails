@@ -1,0 +1,10 @@
+This is a simple rails app thats currently under development that uses Facebook Login api and graph api. 
+
+This app allows the user to login using their faceebook credentials and retrieves their friend list using the grapgh api.
+
+A course registration application is being built over it. 
+
+The app currently has the backend schema in place and I'm currently working on the business logic and the UI.
+
+
+
