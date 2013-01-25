@@ -1,0 +1,12 @@
+
+<div id="user_nav">
+  <% if current_user %>
+    <strong>Welcome</strong> <%= link_to "Sign out", signout_path, id: "sign_out" %> 
+    <br><img src=<%=current_user.image%> width="6%"> 
+    <br><strong><%= current_user.name %></strong>!
+    <br><%= link_to "Your Friends", friends_path(current_user), id: "friends" %>
+  <% else %>
+  <h1>Login</h1>
+    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+  <% end %>
+</div>

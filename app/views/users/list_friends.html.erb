@@ -1,0 +1,10 @@
+<h2>Your Friends </h2><%= link_to "home", root_path %>
+<br><br>
+</a><img src=<%=@user.image %> >
+<br><%= @user.name %>
+
+<p>Total Friends (<%= @friends.length %>)</p>
+<% @friends.each do |friend| %>
+	<li><%= friend["name"] %></li>
+
+<% end %>
